@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { getPokemon } from '../helpers/getPokemon';
+import { getGifs } from '../helpers/getPokemon';
 
 export const PokeSearch = () => {
 
@@ -11,8 +11,8 @@ export const PokeSearch = () => {
 
    const handleSubmit = (e) => {
         e.preventDefault();
+        getGifs(search)
         setSearch('');
-        getPokemon(search)
    }
 
   return (
