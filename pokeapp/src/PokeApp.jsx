@@ -1,12 +1,9 @@
 import React from 'react'
-import { PokeSearch } from './components/PokeSearch'
+import './styles.css'
+import { Pokedex } from './components/Pokedex'
 
 export const PokeApp = () => {
   return (
-    <>
-        <h1>PokeApp</h1>
-        <PokeSearch />
-    </>
-   
+    <Pokedex />
   )
 }
